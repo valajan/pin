@@ -1,0 +1,76 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip card */
+.tooltip .tooltip-card {
+    visibility: hidden;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -60px;
+    background-color: #1b1d22;
+    color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 1;
+    padding: 12px;
+    margin-bottom: 6px;
+}
+
+.tooltip-header {
+    display: flex;
+    flex-flow: column;
+}
+
+.tooltip-card p {
+    margin: 0;
+}
+
+.tooltip-name {
+    font-size: 1em;
+}
+
+.tooltip-subtitle {
+    color: #ffffffd8;
+    padding-top: 2px;
+}
+
+.tooltip-price {
+    padding-top: 14px;
+    text-decoration: overline;
+    font-weight: bold;
+}
+
+.tooltip:hover .tooltip-card {
+    visibility: visible;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrapper h2 {
+    align-self: flex-start;
+}
+
+@media only screen and (min-width: 900px) {
+    .tooltip .tooltip-card {
+        padding: 24px;
+    }
+    .view-wrapper {
+        max-width: 80%;
+    }
+    .content-wrapper h2 {
+        align-self: center;
+    }
+}
+
+@media only screen and (min-width: 900px) {
+    .view-wrapper {
+        max-width: 60%;
+    }
+}

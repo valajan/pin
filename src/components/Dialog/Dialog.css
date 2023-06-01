@@ -1,0 +1,46 @@
+.dialog {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+form {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 12px;
+}
+
+input {
+    font-size: 1em;
+}
+
+.button-success {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1em;
+    background-color: var(--light-sky-blue);
+    border: 1px solid var(--uranian-blue);
+    color: #000;
+}
+
+.button-close {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-size: 1em;
+    background-color: var(--carnation-pink);
+    border: 1px solid var(--fairy-tale);
+    color: #000;
+}
+
+.actions {
+    display: flex;
+    flex-flow: row wrap;
+    align-self: flex-end;
+    gap: 12px;
+}
+
+@media only screen and (min-width: 768px) {
+    .dialog {
+        justify-content: center;
+        align-items: center;
+    }
+}
